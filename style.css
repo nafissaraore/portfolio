@@ -351,21 +351,21 @@
         .profile-card:hover::before {
             opacity: 1;
         }
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 2rem;
+    animation: profileFloat 3s ease-in-out infinite;
+    box-shadow: 0 0 50px rgba(99, 102, 241, 0.3);
+}
 
-        .profile-image {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin: 0 auto 2rem;
-            animation: profileFloat 3s ease-in-out infinite;
-            box-shadow: 0 0 50px rgba(99, 102, 241, 0.3);
-            background: linear-gradient(45deg, var(--primary), var(--secondary));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-        }
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
         @keyframes profileFloat {
             0%, 100% { transform: translateY(0) rotate(0deg); }
@@ -843,4 +843,5 @@
                 font-size: 0.85rem;
             }
         }
+
 
